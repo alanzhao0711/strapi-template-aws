@@ -1,4 +1,3 @@
-const AWS_BUCKET_NAME = "alans-strapi-project";
 module.exports = [
   "strapi::errors",
   {
@@ -13,14 +12,14 @@ module.exports = [
             "data:",
             "blob:",
             "dl.airtable.com",
-            "alans-strapi-project.s3.amazonaws.com",
+            "alans-strapi-project.s3.us-east-2.amazonaws.com",
           ],
           "media-src": [
             "'self'",
             "data:",
             "blob:",
             "dl.airtable.com",
-            "alans-strapi-project.s3.amazonaws.com",
+            "alans-strapi-project.s3.us-east-2.amazonaws.com",
           ],
           upgradeInsecureRequests: null,
         },
