@@ -1,24 +1,15 @@
 module.exports = ({ env }) => ({
+  // ...
   upload: {
     config: {
-      provider: "aws-s3",
+      provider: "strapi-provider-upload-do",
       providerOptions: {
-        accessKeyId: env("AWS_ACCESS_KEY_ID"),
-        secretAccessKey: env("AWS_ACCESS_SECRET"),
-        region: env("AWS_REGION"),
-        params: {
-          Bucket: env("AWS_BUCKET_NAME"),
-        },
-      },
-      // These parameters could solve issues with ACL public-read access — see [this issue](https://github.com/strapi/strapi/issues/5868) for details
-      actionOptions: {
-        upload: {
-          ACL: null,
-        },
-        uploadStream: {
-          ACL: null,
-        },
+        key: env("DO_SPACE_ACCESS_KEY"),
+        secret: env("DO_SPACE_SECRET_KEY"),
+        endpoint: env("DO_SPACE_ENDPOINT"),
+        space: env("DO_SPACE_BUCKET"),
       },
     },
   },
+  // ...
 });
