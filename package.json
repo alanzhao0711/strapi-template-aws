@@ -14,6 +14,8 @@
     "@strapi/plugin-users-permissions": "4.7.0",
     "@strapi/provider-upload-aws-s3": "^4.7.0",
     "@strapi/strapi": "4.7.0",
+    "@stripe/react-stripe-js": "^1.16.5",
+    "@stripe/stripe-js": "^1.47.0",
     "better-sqlite3": "8.0.1",
     "pg": "^8.9.0",
     "strapi-provider-upload-do": "^3.6.8"
